@@ -5,8 +5,9 @@ import { Github } from "styled-icons/boxicons-logos/Github";
 import tokyo from "./images/tokyo.gif";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
 import { Npm } from "styled-icons/fa-brands/Npm";
+
 const Background = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-image: url(${tokyo});
   background-size: 100%;
@@ -21,9 +22,10 @@ const Wrapper = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 100vw;
   margin: 0 auto;
   height: 100vh;
+  overflow: auto;
 
   .title {
     color: orange;
@@ -90,6 +92,8 @@ const Middle = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  width: 100%;
+  height: 100%;
 `;
 
 class App extends Component {
