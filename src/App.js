@@ -22,9 +22,8 @@ const Wrapper = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
 
   .title {
