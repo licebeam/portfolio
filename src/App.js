@@ -232,7 +232,7 @@ class App extends Component {
                 >
                   <div>Dreg-Wars</div>
                 </a>
-                <a href="https://github.com/licebeam/sequence" target="blank">
+                <a href="https://github.com/licebeam/dregwars" target="blank">
                   <Github className="icon2" />
                 </a>
               </Row>
