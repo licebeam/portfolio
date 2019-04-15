@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { LinkedinSquare } from "styled-icons/boxicons-logos/LinkedinSquare";
 import { Github } from "styled-icons/boxicons-logos/Github";
+import tokyo from "./images/tokyo.gif";
+
 const Wrapper = styled.div`
+  background-image: url(${tokyo});
   display: flex;
   flex-direction: column;
   margin: 0 auto;
