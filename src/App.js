@@ -80,12 +80,19 @@ class App extends Component {
             <LinkedinSquare className="icon" />
           </a>
         </Row>
-        <div>Front-End Engineer and Designer</div>
+        <div>Front-End Engineer and Designer.</div>
         <div className="subtitle">
-          Experience building client facing and internal applications
+          Experience building client facing and internal applications.
         </div>
+        <a
+          className="link"
+          href="https://docs.google.com/document/d/1WiwApaQyhAe24zoMChJ1o0a_V_IwK_f_OR_VlMEMD20/edit?usp=sharing"
+          target="blank"
+        >
+          <div>Resume</div>
+        </a>
         <Middle>
-          <div>Projects I've worked on.</div>
+          <div>Sequence UI</div>
         </Middle>
       </Wrapper>
     );
