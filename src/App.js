@@ -4,13 +4,22 @@ import { LinkedinSquare } from "styled-icons/boxicons-logos/LinkedinSquare";
 import { Github } from "styled-icons/boxicons-logos/Github";
 import tokyo from "./images/tokyo.gif";
 
-const Wrapper = styled.div`
+const Background = styled.div`
+  height: 100vh;
+  width: 100vw;
   background-image: url(${tokyo});
+  position: fixed;
+  z-index: -10;
+  opacity: 0.2;
+`;
+
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   height: 100vh;
-  width: 70%;
+  width: 100vw;
+
   .title {
     font-size: 2rem;
     font-weight: bold;
@@ -55,6 +64,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper className="App">
+        <Background />
         <Row>
           <div className="title">Dustin Walker</div>
           <a href="https://github.com/licebeam" target="blank">
