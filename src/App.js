@@ -1,13 +1,34 @@
 import React, { Component } from "react";
-import "./App.css";
 import styled from "styled-components";
-
+import { LinkedinSquare } from "styled-icons/boxicons-logos/LinkedinSquare";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  width: 50%;
+  .icon {
+    height: 30px;
+    transition: 0.3s all;
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+  .link {
+    height: 30px;
+    transition: 0.3s all;
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
 `;
 
-const Header = styled.div``;
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 class App extends Component {
   render() {
     return (
@@ -15,6 +36,7 @@ class App extends Component {
         <div>
           <div>Dustin Walker</div>
           <div>Front-End Engineer and Designer</div>
+          <LinkedinSquare className="icon" />
         </div>
 
         <div>
