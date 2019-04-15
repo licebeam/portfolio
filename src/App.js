@@ -82,6 +82,7 @@ const Row = styled.div`
   flex-direction: row;
   align-items: center;
   width: 100%;
+  height: 100%;
 `;
 
 const Middle = styled.div`
