@@ -53,8 +53,7 @@ const Wrapper = styled.div`
   }
   .link {
     vertical-align: middle;
-    padding: 10px;
-    width: 100px;
+    padding: 6px;
     transition: 0.3s all;
     &:hover {
       cursor: pointer;
@@ -82,6 +81,7 @@ const Row = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 `;
 
 const Middle = styled.div`
@@ -115,13 +115,19 @@ class App extends Component {
           Passionate about design, UI and UX.
           <h6>dustinwalkerart@gmail.com</h6>
         </div>
-        <a
-          className="link"
-          href="https://docs.google.com/document/d/1WiwApaQyhAe24zoMChJ1o0a_V_IwK_f_OR_VlMEMD20/edit?usp=sharing"
-          target="blank"
-        >
-          <div>Resume</div>
-        </a>
+        <Row>
+          <div className="subtitle">
+            Experience building client facing and internal applications.
+            Passionate about design, UI and UX.
+          </div>
+          <a
+            className="link"
+            href="https://docs.google.com/document/d/1WiwApaQyhAe24zoMChJ1o0a_V_IwK_f_OR_VlMEMD20/edit?usp=sharing"
+            target="blank"
+          >
+            <div>Resume</div>
+          </a>
+        </Row>
         <Middle>
           <Row>
             <div className="logo">
@@ -145,13 +151,15 @@ class App extends Component {
               sequence-ui is a React component and ui library built using
               styled-components that offers an extendable and simple way to
               build compound ui for applications.
-              <a
-                className="link"
-                href="https://licebeam.github.com/sequence"
-                target="blank"
-              >
-                <div>Documentation</div>
-              </a>
+              <Row>
+                <a
+                  className="link"
+                  href="https://licebeam.github.com/sequence"
+                  target="blank"
+                >
+                  <div>Documentation</div>
+                </a>
+              </Row>
             </div>
           </Row>
           <h6 className="text-section">
