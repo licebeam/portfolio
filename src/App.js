@@ -36,7 +36,7 @@ const Wrapper = styled.div`
     transition: 0.3s all;
     &:hover {
       cursor: pointer;
-      color: red;
+      color: #fafafa;
     }
   }
   .link {
@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     transition: 0.3s all;
     &:hover {
       cursor: pointer;
-      color: red;
+      color: #fafafa;
     }
   }
 `;
