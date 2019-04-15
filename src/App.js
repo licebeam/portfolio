@@ -8,7 +8,10 @@ const Background = styled.div`
   height: 100vh;
   width: 100vw;
   background-image: url(${tokyo});
+  background-size: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: -10;
   opacity: 0.2;
 `;
@@ -18,7 +21,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin: 0 auto;
   height: 100vh;
-  width: 100vw;
+  width: 90%;
 
   .title {
     font-size: 2rem;
