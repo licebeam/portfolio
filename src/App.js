@@ -87,15 +87,6 @@ const Row = styled.div`
   height: 100%;
 `;
 
-const Middle = styled.div`
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  width: 100%;
-  height: 100%;
-`;
-
 class App extends Component {
   render() {
     return (
@@ -132,115 +123,111 @@ class App extends Component {
             <div>Resume</div>
           </a>
         </Row>
-        <Middle>
-          <Row>
-            <div className="logo">
-              <img className="logo" src={sequenceLogo} />
-              <div className="project-name">sequence-ui</div>
-              <Row>
-                <a href="https://github.com/licebeam/sequence" target="blank">
-                  <Github className="icon2" />
-                </a>
-                <a
-                  href="https://www.npmjs.com/package/sequence-ui"
-                  target="blank"
-                >
-                  <Npm className="icon2" />
-                </a>
-              </Row>
-            </div>
-          </Row>
-          <Row>
-            <div className="text-section">
-              sequence-ui is a React component and ui library built using
-              styled-components that offers an extendable and simple way to
-              build compound ui for applications.
-              <Row>
-                <a
-                  className="link"
-                  href="https://licebeam.github.com/sequence"
-                  target="blank"
-                >
-                  <div>Documentation</div>
-                </a>
-              </Row>
-            </div>
-          </Row>
-          <h6 className="text-section">
-            This project utilizes React and styled-components
-          </h6>
-          <Row>
-            <div className="logo">
-              <div className="project-name title">0and2.gg</div>
-              <a className="link" href="http://0and2.gg/create" target="blank">
-                <div>0and2.gg</div>
+        <br />
+        <Row>
+          <div className="logo">
+            <img className="logo" src={sequenceLogo} />
+            <div className="project-name">sequence-ui</div>
+            <Row>
+              <a href="https://github.com/licebeam/sequence" target="blank">
+                <Github className="icon2" />
               </a>
-            </div>
-          </Row>
-          <div className="text-section">
-            0and2.gg is a social networking and esports platform being built to
-            bring competitive gamers and their communities closer together.
-            Currently leading this project with koenji-dog-squad.
+              <a
+                href="https://www.npmjs.com/package/sequence-ui"
+                target="blank"
+              >
+                <Npm className="icon2" />
+              </a>
+            </Row>
           </div>
-          <h6 className="text-section">
-            This project utilizes React, GraphQL and Apollo, NextJs - This is in
-            its very early stages.
-          </h6>
-          <Row>
-            <div className="logo">
-              <div className="project-name title">Challenge Me!</div>
-              <Row>
-                <a
-                  className="link"
-                  href="https://licebeam.github.io/challengeme/home.html"
-                  target="blank"
-                >
-                  <div>Challenge Me!</div>
-                </a>
-                <a
-                  href="https://github.com/licebeam/challengeme"
-                  target="blank"
-                >
-                  <Github className="icon2" />
-                </a>
-              </Row>
-            </div>
-          </Row>
-          <Row>
-            <div className="text-section">
-              Challenge Me! is a random challenge generator for different video
-              games, built for fun but sadly unfinished. Built using firebase
-              for authentication and database storage of user statistics.
-            </div>
-          </Row>
-          <h6 className="text-section">
-            This project utilizes HTML, Sass, Javascript, Firebase
-          </h6>
-          <Row>
-            <div className="logo">
-              <div className="project-name title">Dreg-Wars</div>
-              <Row>
-                <a
-                  className="link"
-                  href="https://licebeam.github.io/dregwars/"
-                  target="blank"
-                >
-                  <div>Dreg-Wars</div>
-                </a>
-                <a href="https://github.com/licebeam/sequence" target="blank">
-                  <Github className="icon2" />
-                </a>
-              </Row>
-            </div>
-          </Row>
+        </Row>
+        <Row>
           <div className="text-section">
-            Dreg-Wars was an experiment in creating a web-based game. Dreg-Wars
-            is heavily inspired by the classic game Drug Wars.
+            sequence-ui is a React component and ui library built using
+            styled-components that offers an extendable and simple way to build
+            compound ui for applications.
+            <Row>
+              <a
+                className="link"
+                href="https://licebeam.github.com/sequence"
+                target="blank"
+              >
+                <div>Documentation</div>
+              </a>
+            </Row>
           </div>
-          <h6 className="text-section">
-            This project utilizes Bulma, HTML, CSS, JQuery.
-          </h6>
-        </Middle>
+        </Row>
+        <h6 className="text-section">
+          This project utilizes React and styled-components
+        </h6>
+        <Row>
+          <div className="logo">
+            <div className="project-name title">0and2.gg</div>
+            <a className="link" href="http://0and2.gg/create" target="blank">
+              <div>0and2.gg</div>
+            </a>
+          </div>
+        </Row>
+        <div className="text-section">
+          0and2.gg is a social networking and esports platform being built to
+          bring competitive gamers and their communities closer together.
+          Currently leading this project with koenji-dog-squad.
+        </div>
+        <h6 className="text-section">
+          This project utilizes React, GraphQL and Apollo, NextJs - This is in
+          its very early stages.
+        </h6>
+        <Row>
+          <div className="logo">
+            <div className="project-name title">Challenge Me!</div>
+            <Row>
+              <a
+                className="link"
+                href="https://licebeam.github.io/challengeme/home.html"
+                target="blank"
+              >
+                <div>Challenge Me!</div>
+              </a>
+              <a href="https://github.com/licebeam/challengeme" target="blank">
+                <Github className="icon2" />
+              </a>
+            </Row>
+          </div>
+        </Row>
+        <Row>
+          <div className="text-section">
+            Challenge Me! is a random challenge generator for different video
+            games, built for fun but sadly unfinished. Built using firebase for
+            authentication and database storage of user statistics.
+          </div>
+        </Row>
+        <h6 className="text-section">
+          This project utilizes HTML, Sass, Javascript, Firebase
+        </h6>
+        <Row>
+          <div className="logo">
+            <div className="project-name title">Dreg-Wars</div>
+            <Row>
+              <a
+                className="link"
+                href="https://licebeam.github.io/dregwars/"
+                target="blank"
+              >
+                <div>Dreg-Wars</div>
+              </a>
+              <a href="https://github.com/licebeam/sequence" target="blank">
+                <Github className="icon2" />
+              </a>
+            </Row>
+          </div>
+        </Row>
+        <div className="text-section">
+          Dreg-Wars was an experiment in creating a web-based game. Dreg-Wars is
+          heavily inspired by the classic game Drug Wars.
+        </div>
+        <h6 className="text-section">
+          This project utilizes Bulma, HTML, CSS, JQuery.
+        </h6>
       </Wrapper>
     );
   }
