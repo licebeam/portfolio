@@ -17,12 +17,12 @@ code {
 
 a:link {
   text-decoration: none;
-  color: darkcyan;
+  color: lightblue;
 }
 
 a:visited {
   text-decoration: none;
-  color: darkcyan;
+  color: lightblue;
 }
 
 a:hover {
@@ -31,5 +31,5 @@ a:hover {
 
 a:active {
   text-decoration: none;
-  color: darkcyan;
+  color: lightblue;
 }

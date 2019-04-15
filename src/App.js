@@ -18,18 +18,20 @@ const Background = styled.div`
 `;
 
 const Wrapper = styled.div`
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 400px;
   margin: 0 auto;
   height: 100vh;
-  width: 40%;
 
   .title {
+    color: orange;
     font-size: 2rem;
     font-weight: bold;
   }
   .subtitle {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .icon {
     margin-left: 20px;
@@ -52,6 +54,7 @@ const Wrapper = styled.div`
   .link {
     vertical-align: middle;
     padding: 10px;
+    width: 100px;
     transition: 0.3s all;
     &:hover {
       cursor: pointer;
@@ -106,8 +109,11 @@ class App extends Component {
           </a>
         </Row>
         <div>Front-End Engineer and Designer.</div>
+        <br />
         <div className="subtitle">
           Experience building client facing and internal applications.
+          Passionate about design, UI and UX.
+          <h6>dustinwalkerart@gmail.com</h6>
         </div>
         <a
           className="link"
@@ -139,6 +145,13 @@ class App extends Component {
               sequence-ui is a React component and ui library built using
               styled-components that offers an extendable and simple way to
               build compound ui for applications.
+              <a
+                className="link"
+                href="https://licebeam.github.com/sequence"
+                target="blank"
+              >
+                <div>Documentation</div>
+              </a>
             </div>
           </Row>
           <h6 className="text-section">
@@ -184,11 +197,12 @@ class App extends Component {
           <Row>
             <div className="text-section">
               Challenge Me! is a random challenge generator for different video
-              games, built for fun but sadly unfinished.
+              games, built for fun but sadly unfinished. Built using firebase
+              for authentication and database storage of user statistics.
             </div>
           </Row>
           <h6 className="text-section">
-            This project utilizes Bulma, HTML, CSS, JQuery.
+            This project utilizes HTML, Sass, Javascript, Firebase
           </h6>
           <Row>
             <div className="logo">
