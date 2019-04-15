@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { LinkedinSquare } from "styled-icons/boxicons-logos/LinkedinSquare";
+import { Github } from "styled-icons/boxicons-logos/Github";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   height: 100vh;
-  width: 50%;
+  width: 70%;
   .icon {
+    margin-left: 20px;
     height: 30px;
     transition: 0.3s all;
     &:hover {
@@ -28,35 +30,26 @@ const Wrapper = styled.div`
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 class App extends Component {
   render() {
     return (
       <Wrapper className="App">
-        <div>
+        <Row>
           <div>Dustin Walker</div>
-          <div>Front-End Engineer and Designer</div>
-          <LinkedinSquare className="icon" />
-        </div>
-
-        <div>
-          <div>About Me</div>
-          <div>Front-End Engineer and Designer</div>
-        </div>
-
-        <div>
-          <div>Contact Me</div>
-          <div>Front-End Engineer and Designer</div>
-        </div>
-        <div>
-          <div>Social Links</div>
-          <div>Front-End Engineer and Designer</div>
-        </div>
-
-        <div>
-          <div>Stuff I've Made</div>
-          <div>Front-End Engineer and Designer</div>
-        </div>
+          <a href="https://github.com/licebeam" target="blank">
+            <Github className="icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dustin-walker-70b61b91/"
+            target="blank"
+          >
+            <LinkedinSquare className="icon" />
+          </a>
+        </Row>
+        <div>Front-End Engineer and Designer</div>
+        <div>Experience building client facing and internal applications</div>
       </Wrapper>
     );
   }
