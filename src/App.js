@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { LinkedinSquare } from "styled-icons/boxicons-logos/LinkedinSquare";
 import { Github } from "styled-icons/boxicons-logos/Github";
 import tokyo from "./images/tokyo.gif";
-
+import sequenceLogo from "./images/sequence-ui-logo.gif";
+import { Npm } from "styled-icons/fa-brands/Npm";
 const Background = styled.div`
   height: 100vh;
   width: 100vw;
@@ -39,6 +40,15 @@ const Wrapper = styled.div`
       color: #fafafa;
     }
   }
+  .icon2 {
+    padding: 10px;
+    height: 30px;
+    transition: 0.3s all;
+    &:hover {
+      cursor: pointer;
+      color: #fafafa;
+    }
+  }
   .link {
     height: 30px;
     transition: 0.3s all;
@@ -46,6 +56,21 @@ const Wrapper = styled.div`
       cursor: pointer;
       color: #fafafa;
     }
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .project-name {
+    text-align: center;
+  }
+  .text-section {
+    width: 300px;
   }
 `;
 
@@ -56,10 +81,9 @@ const Row = styled.div`
 `;
 
 const Middle = styled.div`
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
   margin-top: 20px;
 `;
 
@@ -92,7 +116,94 @@ class App extends Component {
           <div>Resume</div>
         </a>
         <Middle>
-          <div>Sequence UI</div>
+          <Row>
+            <div className="logo">
+              <img className="logo" src={sequenceLogo} />
+              <div className="project-name">sequence-ui</div>
+              <Row>
+                <a href="https://github.com/licebeam/sequence" target="blank">
+                  <Github className="icon2" />
+                </a>
+                <a
+                  href="https://www.npmjs.com/package/sequence-ui"
+                  target="blank"
+                >
+                  <Npm className="icon2" />
+                </a>
+              </Row>
+            </div>
+          </Row>
+          <Row>
+            <div className="text-section">
+              sequence-ui is a React component and ui library built using
+              styled-components that offers an extendable and simple way to
+              build compound ui for applications.
+            </div>
+          </Row>
+          <h6 className="text-section">
+            This project utilizes React and styled-components
+          </h6>
+          <Row>
+            <div className="logo">
+              <div className="project-name title">0and2.gg</div>
+              <a className="link" href="http://0and2.gg" target="blank">
+                <div>0and2.gg</div>
+              </a>
+            </div>
+          </Row>
+          <div className="text-section">
+            0and2.gg is a social networking and esports platform being built to
+            bring competitive gamers and their communities closer together.
+            Currently leading this project with koenji-dog-squad.
+          </div>
+          <h6 className="text-section">
+            This project utilizes React, GraphQL and Apollo, NextJs
+          </h6>
+        </Middle>
+        <Middle>
+          <Row>
+            <div className="logo">
+              <img className="logo" src={sequenceLogo} />
+              <div className="project-name">sequence-ui</div>
+              <Row>
+                <a href="https://github.com/licebeam/sequence" target="blank">
+                  <Github className="icon2" />
+                </a>
+                <a
+                  href="https://www.npmjs.com/package/sequence-ui"
+                  target="blank"
+                >
+                  <Npm className="icon2" />
+                </a>
+              </Row>
+            </div>
+          </Row>
+          <Row>
+            <div className="text-section">
+              sequence-ui is a React component and ui library built using
+              styled-components that offers an extendable and simple way to
+              build compound ui for applications.
+            </div>
+          </Row>
+          <h6 className="text-section">
+            This project utilizes React and styled-components
+          </h6>
+          <Row>
+            <div className="logo">
+              <div className="project-name title">0and2.gg</div>
+              <a className="link" href="http://0and2.gg" target="blank">
+                <div>0and2.gg</div>
+              </a>
+            </div>
+          </Row>
+          <div className="text-section">
+            0and2.gg is a social networking and esports platform being built to
+            bring competitive gamers and their communities closer together.
+            Currently leading this project with koenji-dog-squad.
+          </div>
+          <h6 className="text-section">
+            This project utilizes React, GraphQL and Apollo, NextJs
+          </h6>
         </Middle>
       </Wrapper>
     );
