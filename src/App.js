@@ -8,6 +8,13 @@ const Wrapper = styled.div`
   margin: 0 auto;
   height: 100vh;
   width: 70%;
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .subtitle {
+    font-size: 0.6rem;
+  }
   .icon {
     margin-left: 20px;
     height: 30px;
@@ -32,12 +39,21 @@ const Row = styled.div`
   flex-direction: row;
   align-items: center;
 `;
+
+const Middle = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+`;
+
 class App extends Component {
   render() {
     return (
       <Wrapper className="App">
         <Row>
-          <div>Dustin Walker</div>
+          <div className="title">Dustin Walker</div>
           <a href="https://github.com/licebeam" target="blank">
             <Github className="icon" />
           </a>
@@ -49,7 +65,12 @@ class App extends Component {
           </a>
         </Row>
         <div>Front-End Engineer and Designer</div>
-        <div>Experience building client facing and internal applications</div>
+        <div className="subtitle">
+          Experience building client facing and internal applications
+        </div>
+        <Middle>
+          <div>Projects I've worked on.</div>
+        </Middle>
       </Wrapper>
     );
   }
