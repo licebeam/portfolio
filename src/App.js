@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin: 0 auto;
   height: 100vh;
-  width: 90%;
+  width: 40%;
 
   .title {
     font-size: 2rem;
@@ -50,7 +50,8 @@ const Wrapper = styled.div`
     }
   }
   .link {
-    height: 30px;
+    vertical-align: middle;
+    padding: 10px;
     transition: 0.3s all;
     &:hover {
       cursor: pointer;
@@ -146,7 +147,7 @@ class App extends Component {
           <Row>
             <div className="logo">
               <div className="project-name title">0and2.gg</div>
-              <a className="link" href="http://0and2.gg" target="blank">
+              <a className="link" href="http://0and2.gg/create" target="blank">
                 <div>0and2.gg</div>
               </a>
             </div>
@@ -157,52 +158,61 @@ class App extends Component {
             Currently leading this project with koenji-dog-squad.
           </div>
           <h6 className="text-section">
-            This project utilizes React, GraphQL and Apollo, NextJs
+            This project utilizes React, GraphQL and Apollo, NextJs - This is in
+            its very early stages.
           </h6>
-        </Middle>
-        <Middle>
           <Row>
             <div className="logo">
-              <img className="logo" src={sequenceLogo} />
-              <div className="project-name">sequence-ui</div>
+              <div className="project-name title">Challenge Me!</div>
               <Row>
-                <a href="https://github.com/licebeam/sequence" target="blank">
-                  <Github className="icon2" />
-                </a>
                 <a
-                  href="https://www.npmjs.com/package/sequence-ui"
+                  className="link"
+                  href="https://licebeam.github.io/challengeme/home.html"
                   target="blank"
                 >
-                  <Npm className="icon2" />
+                  <div>Challenge Me!</div>
+                </a>
+                <a
+                  href="https://github.com/licebeam/challengeme"
+                  target="blank"
+                >
+                  <Github className="icon2" />
                 </a>
               </Row>
             </div>
           </Row>
           <Row>
             <div className="text-section">
-              sequence-ui is a React component and ui library built using
-              styled-components that offers an extendable and simple way to
-              build compound ui for applications.
+              Challenge Me! is a random challenge generator for different video
+              games, built for fun but sadly unfinished.
             </div>
           </Row>
           <h6 className="text-section">
-            This project utilizes React and styled-components
+            This project utilizes Bulma, HTML, CSS, JQuery.
           </h6>
           <Row>
             <div className="logo">
-              <div className="project-name title">0and2.gg</div>
-              <a className="link" href="http://0and2.gg" target="blank">
-                <div>0and2.gg</div>
-              </a>
+              <div className="project-name title">Dreg-Wars</div>
+              <Row>
+                <a
+                  className="link"
+                  href="https://licebeam.github.io/dregwars/"
+                  target="blank"
+                >
+                  <div>Dreg-Wars</div>
+                </a>
+                <a href="https://github.com/licebeam/sequence" target="blank">
+                  <Github className="icon2" />
+                </a>
+              </Row>
             </div>
           </Row>
           <div className="text-section">
-            0and2.gg is a social networking and esports platform being built to
-            bring competitive gamers and their communities closer together.
-            Currently leading this project with koenji-dog-squad.
+            Dreg-Wars was an experiment in creating a web-based game. Dreg-Wars
+            is heavily inspired by the classic game Drug Wars.
           </div>
           <h6 className="text-section">
-            This project utilizes React, GraphQL and Apollo, NextJs
+            This project utilizes Bulma, HTML, CSS, JQuery.
           </h6>
         </Middle>
       </Wrapper>
