@@ -113,13 +113,12 @@ class App extends Component {
         <div className="subtitle">
           Experience building client facing and internal applications.
           Passionate about design, UI and UX.
-          <h6>dustinwalkerart@gmail.com</h6>
         </div>
+        <br />
+        dustinwalkerart@gmail.com
+        <div className="subtitle">Phone: 080-8706-4034</div>
         <Row>
-          <div className="subtitle">
-            Experience building client facing and internal applications.
-            Passionate about design, UI and UX.
-          </div>
+          <div className="subtitle">Higashi-Nakano, Tokyo, Japan</div>
           <a
             className="link"
             href="https://docs.google.com/document/d/1WiwApaQyhAe24zoMChJ1o0a_V_IwK_f_OR_VlMEMD20/edit?usp=sharing"
