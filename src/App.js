@@ -134,14 +134,14 @@ class App extends Component {
         <Section>
           <Row>
             <div className="logo">
-              <div className="project-name title">Kaze</div>
+              <div className="project-name title">Kaze App</div>
               <Row>
                 <a
                   className="link"
                   href="https://licebeam.github.io/kaze-app/"
                   target="blank"
                 >
-                  <div>Dreg-Wars</div>
+                  <div>Kaze App</div>
                 </a>
                 <a href="https://github.com/licebeam/kaze-app" target="blank">
                   <Github className="icon2" />
