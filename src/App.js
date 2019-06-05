@@ -110,7 +110,7 @@ class App extends Component {
               <LinkedinSquare className="icon" />
             </a>
           </Row>
-          <div>Front-End Engineer and Designer.</div>
+          <div>Front-End Engineer</div>
           <br />
           <div className="subtitle">
             Experience building client facing and internal applications.
