@@ -134,6 +134,32 @@ class App extends Component {
         <Section>
           <Row>
             <div className="logo">
+              <div className="project-name title">Kaze</div>
+              <Row>
+                <a
+                  className="link"
+                  href="https://licebeam.github.io/kaze-app/"
+                  target="blank"
+                >
+                  <div>Dreg-Wars</div>
+                </a>
+                <a href="https://github.com/licebeam/kaze-app" target="blank">
+                  <Github className="icon2" />
+                </a>
+              </Row>
+            </div>
+          </Row>
+          <div className="text-section">
+            Kaze is a personal project built for studying Japanese, all data was scraped using puppeteer from iKnow's core 6000.
+            All Data is saved locally. Built using react primarily.
+          </div>
+          <h6 className="text-section">
+            This project utilizes React, Puppeteer and Node.
+          </h6>
+        </Section>
+        <Section>
+          <Row>
+            <div className="logo">
               <img className="logo" src={sequenceLogo} />
               <div className="project-name">sequence-ui</div>
               <Row>
